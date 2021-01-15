@@ -13,7 +13,6 @@ const worker = function(myList) {
     return _.forEach(myList, function(val, key, col) {
         if (val.population > 1) {
             val.size = 'big'
-            console.log(Object.key(val));
         } else if (val.population < 1 && val.population > 0.5) {
             val.size = 'med'
         } else {
